@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.tmpl.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var aaaa = {aaa: 'bbb'};
+                $('#tmpl_insert').html('ううう');
+                //$.tmpl()
+                $('#tmpl').tmpl(aaaa).appendTo('#tmpl_insert');
+            });
+        </script>
+    </head>
+    <body>
+        <div id="tmpl_insert">
+            あああああああ
+        </div>
+
+        <script id="tmpl" type="text/x-jquery-tmpl">
+            <div>
+            うああああああ
+            </div>
+        </script>
+    </body>
+</html>

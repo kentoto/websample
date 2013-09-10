@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.tmpl.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#run').click(function(){
+                    $('#example').scrollTop($('#example').height());
+                });
+                $('#run2').click(function(){
+                    $('#example').animate({scrollTop:$('#example').height()},100);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="run" class="btn">スクロール</div>
+        <div id="run2" class="btn">アニメ付</div>
+        <div id="example" style="overflow: scroll;height: 300px;border:1px solid">
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+            <p>あああああああ</p>
+        </div>
+
+        <script id="tmpl" type="text/x-jquery-tmpl">
+            <div>
+            うああああああ
+            </div>
+        </script>
+    </body>
+</html>
